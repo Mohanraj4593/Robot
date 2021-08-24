@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.7.7 on win32)" generated="20210823 18:02:56.897" rpa="false" schemaversion="2">
+<suite id="s1" name="Browser actions" source="C:\Users\rajmohan\PycharmProjects\Robot_Tests\Robot\Browser_actions.robot">
+<test id="s1-t1" name="Login test case with valid credentials">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${website}</arg>
+<arg>${webdriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210823 18:02:57.094" level="INFO">Opening browser 'chrome' to base url 'https://login.yahoo.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210823 18:02:59.723" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210823 18:02:59.723" endtime="20210823 18:02:59.723"/>
+</kw>
+<msg timestamp="20210823 18:02:59.727" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+</msg>
+<status status="FAIL" starttime="20210823 18:02:57.094" endtime="20210823 18:02:59.727"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="login-username"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.727" endtime="20210823 18:02:59.727"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="login-signin"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.728" endtime="20210823 18:02:59.728"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="login-passwd"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.729" endtime="20210823 18:02:59.729"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="login-passwd"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.729" endtime="20210823 18:02:59.729"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="login-signin"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.730" endtime="20210823 18:02:59.730"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.730" endtime="20210823 18:02:59.730"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210823 18:02:59.730" endtime="20210823 18:02:59.730"/>
+</kw>
+<tag>Valid Login Test</tag>
+<status status="FAIL" starttime="20210823 18:02:57.093" endtime="20210823 18:02:59.731">WebDriverException: Message: unknown error: cannot find Chrome binary
+</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20210823 18:02:56.899" endtime="20210823 18:02:59.732"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Valid Login Test</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Browser actions">Browser actions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
