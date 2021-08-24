@@ -6,11 +6,12 @@ Library  SeleniumLibrary
 ${webdriver}  chrome
 ${website}  https://login.yahoo.com/
 ${username}  mohanguttedar1234@yahoo.com
-${password}  70226468305
+${password}  7022646830
 
 *** Test Cases ***
 Login test case with valid credentials
-   [Tags] Valid Login Test
+
+    [Tags] Valid Login Test
     Open Browser  ${website}  ${webdriver}
     Input Text  //*[@id="login-username"]  ${username}
     Click Button  //*[@id="login-signin"]
