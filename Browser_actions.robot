@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation    Browser login verification test
+Documentation    Browser login verification Test
 Library  SeleniumLibrary
 
 
 *** Variables ***
-${webdriver}  chrome
+${webdriver}  firefox
 ${website}  https://login.yahoo.com/
 ${username}  mohanguttedar1234@yahoo.com
 ${password}  7022646830
@@ -20,6 +20,7 @@ Test title
     Click Button  //*[@id="login-signin"]
     Sleep  1s
     Close Browser
+    
 *** Keywords ***
 Provided precondition
     Setup system under test
